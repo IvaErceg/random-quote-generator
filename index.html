@@ -6,21 +6,23 @@
     <meta charset="UTF-8">
     <meta<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src 'self' https://somedomain.com/ 'unsafe-inline' 'unsafe-eval';  media-src *">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div id="container">
         <header>
-            <h1>Quotes for your soul</h1>
+            <h1>Random quote generator</h1>
             <p id="symbol">***</p>
-            <p>Random quote generator</p>
+            <p>Quotes for your soul</p>
         </header>
         <section id="quotes">
         </section>
         <section id="controls">
             <button id="next" class="btn">Generate</button>
-            <button class="btn"><a id="tweet" href="https://twitter.com/share" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></button>
+            <a id="tweet" href="https://twitter.com/share" data-show-count="false"><button class="btn">Tweet</button></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </section>
     </div>
     <script src="app.js"></script>
