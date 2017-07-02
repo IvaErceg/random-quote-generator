@@ -1,7 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*STYLES*/
+
+body {
+    box-sizing: border-box;
+}
+
+#container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
+    margin: 0 10%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    font-style: italic;
+    padding: 50px 0;
+}
+
+h1, header p, #symbol {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#symbol {
+    padding: 0 50px;
+    flex: 1;
+    
+}
+
+#quotes {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    align-self: stretch;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+q {
+    margin-top: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#author {
+    font-style: italic;
+    text-align: right;
+    padding-right: 20%;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#controls {
+    max-width: 100%;
+    margin: 1% 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btn {
+    color: white;
+    background-color: black;
+    outline: black 3px solid;
+    border: white 3px solid;
+    width: 100px;
+    height: 40px;
+    margin: 2%;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
 }

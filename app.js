@@ -20,7 +20,7 @@
         init: function() {
             const quotes = document.querySelector('#quotes');
             const next = document.querySelector('#next');
-            const tweet = document.querySelector('.twitter-share-button');
+            const tweet = document.querySelector('#tweet');
             view.render(0);
             tweet.addEventListener('click', function(){controller.tweet(tweet)});
             next.addEventListener('click', function(){controller.next()});          
@@ -30,7 +30,7 @@
             const data = controller.getQuote(i);
             quotes.innerHTML = `
                 <q>${data.quote}</q>
-                <p>${data.author}</p>
+                <p id="author">${data.author}</p>
             `
         }
     }
@@ -52,8 +52,8 @@
         },
 
         tweet: function(el) {
-            const clicked = this.getQuote();
-            el.setAttribute('href', `https://twitter.com/share?text=${clicked.quote} by ${clicked.author}`);
+            //const clicked = this.getQuote();
+            //el.setAttribute('href', `https://twitter.com/share?text=${clicked.quote} by ${clicked.author}`);
         }
     }
     controller.init();

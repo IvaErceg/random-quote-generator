@@ -10,12 +10,19 @@
 </head>
 
 <body>
-    <section id="quotes">
-    </section>
-    <section id="controls">
-        <button id="next">Next</button>
-        <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </section>
+    <div id="container">
+        <header>
+            <h1>Quotes for your soul</h1>
+            <p id="symbol">***</p>
+            <p>Random quote generator</p>
+        </header>
+        <section id="quotes">
+        </section>
+        <section id="controls">
+            <button id="next" class="btn">Generate</button>
+            <button class="btn"><a id="tweet" href="https://twitter.com/share" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></button>
+        </section>
+    </div>
     <script src="app.js"></script>
 </body>
 
